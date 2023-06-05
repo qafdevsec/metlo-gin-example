@@ -12,8 +12,6 @@ FROM alpine:3.18
 
 WORKDIR /app
 
-RUN apk update && apk add libgcc
-
 COPY --from=builder /app/test-gin .
 COPY --from=builder /app/metlo-agent /usr/local/bin
 
