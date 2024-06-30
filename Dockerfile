@@ -8,7 +8,7 @@ RUN apk update && apk add curl
 RUN curl https://metlo-releases.s3.us-west-2.amazonaws.com/metlo_agent_linux_amd64_alpine_0.1.1 > metlo-agent
 RUN chmod +x metlo-agent
 
-FROM alpine:3.18
+FROM alpine:3
 
 WORKDIR /app
 
